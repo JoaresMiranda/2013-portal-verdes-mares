@@ -1,0 +1,300 @@
+/*
+Theme Name: Portal Verdes Mares 2012 / 2013
+Theme URI: http://www.verdesmares.com.br
+Description: Layout para o novo projeto do Portal Verdes Mares
+Version: 1.0
+Author: Sistema Verdes Mares (design + xhtml + css: Joares Miranda / dev: )
+*/
+
+/* fonte ~~> font-family: 'Ubuntu', sans-serif; font-weight: 400 */
+
+* { margin:0; padding:0; }
+
+body { font-family: 'Ubuntu', sans-serif; font-weight:300 !important; font-size:14px; }
+
+a { color:#333; text-decoration:none; }
+a img { border:none; }
+.borda-padrao img { border-left:10px solid #690; }
+.borda-esportes img { border-left:10px solid #F90; }
+.borda-entretenimento img { border-left:10px solid #369; }
+.cor-padrao { color:#690; }
+.cor-esportes { color:#F90; }
+.cor-entretenimento { color:#369; }
+.cor-svmevc { color:#639; }
+.coluna-cor-padrao { border-bottom:5px solid #690; }
+.coluna-cor-esportes { border-bottom:5px solid #F90; }
+.coluna-cor-entretenimento { border-bottom:5px solid #369; }
+
+#PrimeiraPagina,
+#Segmentos,
+#Banners,
+#Canais,
+#ContentInterna { width:960px; margin:20px auto; clear:both; float:none; display:block; }
+
+#LinksVeiculos { background-color:#F4F4F4; }
+#LinksVeiculos ul { width:940px; margin:0 auto 10px auto; padding:15px 0; }
+#LinksVeiculos li { list-style:none; display:inline; margin-right:25px; font-size:12px; }
+#LinksVeiculos a:hover { text-decoration:underline; }
+
+/* Topo */
+#Header { border:1px solid #F5F5F5; width:940px; height:150px; margin:10px auto 0 auto; position:relative; }
+#Header h1 { text-indent:-5000px; overflow:hidden; background:url(../imagens/logo.png) no-repeat top left; width:132px; height:120px; margin:15px 0 0 15px; }
+#Header h1 a { width:132px; height:120px; display:block; }
+
+#Busca { width:250px; position:absolute; top:55px; right:5px; }
+#Busca fieldset { border:none; }
+#Busca legend,
+#Busca label { display:none; }
+#Busca form { width:240px; height:37px; margin-bottom:8px; border:1px solid #E5E5E5; -webkit-border-radius:3px; -moz-border-radius:3px; -o-border-radius:3px; -ms-border-radius:3px; border-radius:3px; }
+#Busca #s { width:195px; height:28px; padding:2px 5px; position:relative; top:2px; left:2px; border:none; }
+#Buscar { border:none; text-indent:-5000px; overflow:hidden; background:url(../imagens/bt-busca.gif) no-repeat 0 6px; width:27px; height:27px; cursor:pointer; position:relative; top:3px; left:4px; }
+
+/* Redes Sociais */
+#RedesSociais { position:absolute; top:15px; right:15px; width:134px; }
+#RedesSociais li { -webkit-transition: background 0.2s ease-out; -moz-transition: background 0.2s ease-out; -o-transition: background 0.2s ease-out; -ms-transition: background 0.2s ease-out; transition: background 0.2s ease-out; text-indent:-5000px; overflow:hidden; width:25px; height:25px; float:left; margin-left:8px; }
+#RedesSociais li a { width:25px; height:25px; display:block; }
+#RedesSociais li#LinkTwitter { background:url(../imagens/redes-sociais.png) no-repeat 0 0; }
+#RedesSociais li#LinkFacebook { background:url(../imagens/redes-sociais.png) no-repeat -34px 0; }
+#RedesSociais li#LinkGooglePlus { background:url(../imagens/redes-sociais.png) no-repeat -68px 0; }
+#RedesSociais li#LinkRSS { background:url(../imagens/redes-sociais.png) no-repeat -101px 0; }
+#RedesSociais li#LinkTwitter:hover { background:url(../imagens/redes-sociais.png) no-repeat 0 -27px; }
+#RedesSociais li#LinkFacebook:hover { background:url(../imagens/redes-sociais.png) no-repeat -34px  -27px; }
+#RedesSociais li#LinkGooglePlus:hover { background:url(../imagens/redes-sociais.png) no-repeat -68px  -27px; }
+#RedesSociais li#LinkRSS:hover { background:url(../imagens/redes-sociais.png) no-repeat -101px  -27px; }
+/* ajuste banner */ #MegaBanner div { z-index:999 !important; }
+.hoverRedesSociais { position:absolute; top:10px; right:10px; width:100px; display:none; }
+.hoverRedesSociais li,
+.coluna-segmentos .hoverRedesSociais li { -webkit-transition: background 0.2s ease-out; -moz-transition: background 0.2s ease-out; -o-transition: background 0.2s ease-out; -ms-transition: background 0.2s ease-out; transition: background 0.2s ease-out; text-indent:-5000px; overflow:hidden; width:25px; height:25px; float:left; margin-left:8px; }
+.hoverRedesSociais li a,
+.coluna-segmentos .hoverRedesSociais li a { width:25px; height:25px; display:block; }
+.hoverRedesSociais li.btLinkTwitter { background:url(../imagens/redes-sociais.png) no-repeat 0 0; }
+.hoverRedesSociais li.btLinkFacebook { background:url(../imagens/redes-sociais.png) no-repeat -34px 0; }
+.hoverRedesSociais li.btLinkGooglePlus { background:url(../imagens/redes-sociais.png) no-repeat -68px 0; }
+.hoverRedesSociais li.btLinkTwitter:hover { background:url(../imagens/redes-sociais.png) no-repeat 0 -27px; }
+.hoverRedesSociais li.btLinkFacebook:hover { background:url(../imagens/redes-sociais.png) no-repeat -34px  -27px; }
+.hoverRedesSociais li.btLinkGooglePlus:hover { background:url(../imagens/redes-sociais.png) no-repeat -68px  -27px; }
+.coluna-segmentos .hoverRedesSociais li { border:none; margin:0 0 0 8px; padding:inherit; clear:none; }
+.coluna-segmentos .hoverRedesSociais li a { line-height:inherit; }
+.Modelo1:hover .hoverRedesSociais,
+.Modelo2:hover .hoverRedesSociais,
+.chamadaSegmentos:hover .hoverRedesSociais,
+.sub-manchete:hover .hoverRedesSociais,
+.coluna-full:hover .hoverRedesSociais { display:block; position:absolute; }
+.chamadaSegmentos,
+.coluna-full { position:relative; }
+
+/* Menu */
+#Menu { border:1px solid #F5F5F5; border-width:0 1px 1px 1px; width:940px; min-height:48px; margin:0 auto 20px auto; background:url(../imagens/svm-menu.gif) no-repeat center right; }
+#Menu #Navegacao { padding:13px 10px; }
+#Menu li { list-style:none; }
+.item-menu h3 { text-transform:uppercase; font-weight:300; padding:15px 10px; position:relative; top:-13px; border:1px solid #FFF; border-width:0 1px; }
+.item-menu:hover h3 { border:1px solid #E5E5E5; border-width:0 1px; background-color:#FFF; }
+.item-menu { position:relative; float:left; margin-right:25px; }
+.item-menu a { display:block; }
+.item-menu:hover .sub-menu { display:block; position:absolute; top:35px; z-index:99999; border:1px solid #E5E5E5; border-width:0 1px 1px 1px; background-color:#FFF; }
+.item-menu .sub-menu { display:none; width:380px; }
+.item-menu .sub-menu li { float:left; width:160px; margin:10px 10px 0 10px; }
+.item-menu .sub-menu h4 { font-size:16px; font-weight:400; border-bottom:2px solid #F4F4F4; padding-bottom:5px; width:160px; }
+.item-menu .sub-menu li ul { margin-bottom:15px; float:left; }
+.item-menu .sub-menu li ul li { border-top:1px solid #F4F4F4; margin:0; clear:none; }
+.item-menu .sub-menu li ul li a { padding:10px; }
+.item-menu .sub-menu li ul li a:hover { background-color:#F4F4F4; }
+
+#DataEdicao { background-color:#B6D6A7; color:#FFF; width:80px; font-size:22px; float:left; margin-right:20px; }
+#DataEdicao td { padding:4px; }
+.dadosEdicao { font-size:12px; line-height:18px; }
+
+#Materias { width:640px; float:left; }
+#Materias h2 { background:url(../imagens/bg-tt-manchete.png) top left; font-weight:300; }
+.bg-padrao { background:url(../imagens/bg-tt-padrao.png) top left; }
+.bg-esportes {  background:url(../imagens/bg-tt-esportes.png) top left; }
+.bg-entretenimento { background:url(../imagens/bg-tt-entretenimento.png) top left; }
+
+/* Modelos */
+.Modelo1 div,
+.Modelo2 div,
+.Modelo3 div,
+.Modelo4 div,
+.Modelo5 div,
+.Modelo6 div,
+.coluna-full div { position:absolute; bottom:20px; right:0; text-align:right; float:right; }
+
+.Modelo1 div p,
+.Modelo2 div p,
+.Modelo3 div p,
+.Modelo4 div p,
+.Modelo5 div p,
+.Modelo6 div p,
+.coluna-full div p { font-size:20px; color:#FFF; padding:5px 10px; float:right; width:230px; height:22px; overflow:hidden; text-transform:uppercase; }
+
+.Modelo1 div h2,
+.Modelo2 div h2,
+.Modelo3 div h2,
+.Modelo4 div h2,
+.Modelo5 div h2,
+.Modelo6 div h2,
+.coluna-full div h2 { float:right; font-size:26px; color:#FFF; padding:10px; line-height:30px; height:85px; overflow:hidden; }
+
+.Modelo1 div h2 a,
+.Modelo2 div h2 a,
+.Modelo3 div h2 a,
+.Modelo4 div h2 a,
+.Modelo5 div h2 a,
+.Modelo6 div h2 a,
+.coluna-full div h2 a { color:#FFF; text-decoration:none; }
+
+.Modelo1,
+.Modelo6,
+.Modelo7 { width:300px; height:380px; position:relative; margin:0 10px; float:left; }
+.Modelo2 { width:620px; height:260px; position:relative; margin:0 10px 10px 10px; float:left; }
+.Modelo3 { width:460px; height:260px; position:relative; margin:0 10px 10px 10px; float:left; }
+.Modelo4,
+.Modelo5,
+.coluna-full { width:300px; height:260px; position:relative; margin:0 10px 10px 10px; float:left; }
+
+.cartolaMancheteSemFoto { text-transform:uppercase; color:#398546; }
+.Modelo7 h1 { font-size:30px; font-weight:400; color:#FFF; line-height:30px; margin:5px 0 10px 0; padding-bottom:15px; border-bottom:1px solid #F4F4F4; height:90px; overflow:hidden; }
+.Modelo7 li { list-style:none; border-bottom:1px solid #F4F4F4; margin-bottom:15px; padding-bottom:15px; height:32px; overflow:hidden; }
+
+#SubManchetes { float:left; width:320px; color:#FFF; }
+.sub-manchete { position:relative; }
+.coluna-simples { width:300px; height:100px; margin:10px; clear:both; float:left; }
+.coluna-dupla { width:140px; height:260px; margin:0 10px 10px 10px; float:left; }
+.sub-manchete div { position:absolute; bottom:5px; }
+.sub-manchete p { font-size:16px; color:#FFF; padding:5px 10px; width:120px; height:16px; overflow:hidden; text-transform:uppercase; }
+.sub-manchete h2 { font-size:14px; padding:10px; }
+.sub-manchete h2 a { color:#FFF; text-decoration:none; line-height:20px; }
+#SubManchetes .coluna-simples h2 { height:35px; overflow:hidden; }
+#SubManchetes .coluna-dupla h2 { height:55px; overflow:hidden; }
+.coluna-simples div { width:230px; }
+.Modelo-sub-2,
+.Modelo-sub-3,
+.Modelo-sub-4,
+.Modelo-sub-5 { width:640px !important; }
+.Modelo-sub-2 .coluna-simples,
+.Modelo-sub-3 .coluna-simples,
+.Modelo-sub-4 .coluna-simples,
+.Modelo-sub-5 .coluna-simples,
+.coluna-full { clear:none !important; }
+
+/* Multimidia */
+#Multimidia { width:300px; height:380px; margin:10px 0 10px 650px; position:relative; }
+#multimidia-slides { width:300px; height:380px; border:1px solid #F4F4F4; background-color:#FBFBFB; position:relative; }
+.titulo-multimidia { width:280px; margin:10px; }
+.titulo-multimidia span { color:#3A8746; display:block; clear:both; margin-bottom:5px; font-size:14px; }
+.titulo-multimidia h3 { font-size:18px; font-weight:400; }
+#multimidia-slides .multimidia-slides-container .slider-container { height:360px; }
+.slideVideo a span { position:absolute; top:0; left:0; width:300px; height:250px; background:url(../imagens/tapume-video.png) no-repeat top left; z-index:999999; }
+
+/*Slider Pagination*/
+.pagination { width:75px; position:absolute; border:5px; right:10px; }
+.pagination li { float:left; margin:0 1px; list-style:none; }
+.pagination li a { display:block; width:12px; height:0; padding-top:12px; background-image:url(../imagens/pagination.png); background-position:0 0; float:left; overflow:hidden; }
+.pagination li.current a { background-position:0 -12px; }
+
+#MegaBanner { width:940px; clear:both; margin:30px auto 20px auto; }
+
+#Segmentos .chamadaSegmentos { height:250px; position:relative; }
+#Segmentos .chamadaSegmentos .cartolaSegmentos { font-weight:200; color:#FFF; text-transform:uppercase; font-size:18px; width:270px; padding:10px; position:absolute; left:10px; bottom:70px; }
+
+.chamadaSegmentos h3 { font-size:16px; font-weight:300; margin-top:8px; line-height:24px; height:50px; overflow:hidden; }
+.coluna-segmentos { width:300px; float:left; margin:10px; padding-bottom:20px; }
+.coluna-segmentos li { list-style:none; border-top:1px solid #F4F4F4; padding:10px 0 5px 0; margin:10px 0 5px 0; width:300px; height:80px; overflow:hidden; clear:both; float:left; }
+.coluna-segmentos li a { color:#333; text-decoration:none; font-weight:300; line-height:22px; }
+.coluna-segmentos li p { font-weight:400; margin-bottom:5px; }
+.coluna-segmentos li img { float:left; width:70px; height:70px; overflow:hidden; margin-right:10px; }
+
+.titulo-Secao { text-transform:uppercase; font-weight:300; font-size:24px; }
+
+#Banners { height:100px; }
+#Banners div { width:300px; height:100px; float:left; margin:30px 10px; }
+
+#Canais .borda-padrao img { border-width:5px !important; }
+#Canais .titulo-canais { font-size:20px; font-weight:300; margin-bottom:10px; text-transform:uppercase; }
+.coluna-veiculo { width:220px; float:left; margin:10px; }
+.coluna-veiculo li { list-style:none; border-top:1px solid #F4F4F4; padding:10px 0 5px 0; margin:10px 0 5px 0; width:220px; height:50px; overflow:hidden; clear:both; float:left; line-height:18px; }
+.coluna-veiculo li img { float:left; width:50px; height:50px; overflow:hidden; margin-right:10px; }
+
+.canalSemFoto li { background:url(../imagens/bolinha.gif) no-repeat 0 17px; padding-left:12px; }
+.Modelo7 .canalSemFoto li { background:url(../imagens/bolinha.gif) no-repeat 0 5px !important; padding-left:12px; }
+.pos-listagem { position:relative; top:7px; left:-10px; }
+
+#GaleriaDeFotos { width:940px; clear:both; border-top:10px solid #F4F4F4; padding-top:20px; margin:30px auto; }
+#GaleriaDeFotos h1 { font-size:20px; font-weight:300; margin-bottom:10px; text-transform:uppercase; }
+#Fotos { border-bottom:10px solid #F4F4F4; width:940px; clear:both; float:left; padding-bottom:20px; margin-bottom:20px; }
+#Fotos div { width:185px; height:150px; position:relative; float:left; margin:1px; position:relative; }
+#Fotos div a { color:#FFF; width:165px; height:130px; position:absolute; top:0; left:0; z-index:1; padding:10px; line-height:22px; opacity: 0; filter:alpha(opacity=0); -webkit-transition: opacity 0.4s linear;  -moz-transition: opacity 0.4s linear; -o-transition: opacity 0.4s linear; -ms-transition: opacity 0.4s linear; transition: opacity 0.4s linear; }
+
+#Fotos div:hover a { width:165px; height:130px; opacity: 1; filter:alpha(opacity=100);}
+
+#CaixaFacebook { width:940px; margin:10px auto 30px auto;border-bottom:10px solid #F4F4F4; padding-bottom:20px; }
+
+#Rodape { clear:both; }
+#Rodape ul { width:940px; margin:10px auto; clear:both; padding-bottom:10px; }
+#Rodape li { list-style:none; margin:3px 0; }
+#Rodape li a:hover { text-decoration:underline; }
+#Logos { background-color:#F4F4F4; clear:both; width:100%; float:left; margin-bottom:20px; }
+#Logos div { width:940px; margin:0 auto; }
+#Logos p { background-color:#FFF; padding:5px 20px; width:655px; float:right; }
+#Logos img { height:50px; width:auto; }
+.logo-svm-rodape { position:relative; top:5px; }
+
+
+/* Internas */
+#ContentInterna { width:960px; margin:10px auto; clear:both; }
+#ConteudoInterna { width:620px; margin:0 10px; float:left; }
+#ConteudoInterna h2  { font-size:20px; font-weight:300; text-transform:uppercase; margin-bottom:15px; color:#398546; }
+#ConteudoInterna p { margin:10px 0; }
+
+.tituloPaginaInterna { font-size:20px; font-weight:300; text-transform:uppercase; border-bottom:2px solid #E4E4E4; padding-bottom:15px; margin-bottom:15px; }
+.txtPaginaInterna { line-height:20px; }
+.txtPaginaInterna a { font-weight:400; color:#398546; }
+
+/* Sidebar */
+#Sidebar { width:300px; margin-left:650px; }
+#Sidebar #Multimidia { margin-left:0; }
+#DestaquesCapa { border-top:3px solid #398546; border-bottom:5px solid #E4E4E4; border-left:1px solid #E4E4E4; border-right:1px solid #E4E4E4; margin:15px 0; }
+#DestaquesCapa h3 { text-transform:uppercase; font-size:20px; font-weight:300; color:#398546; width:280px; margin:10px auto; padding:5px 0 10px 0; border-bottom:2px solid #E4E4E4; }
+#DestaquesCapa li { list-style:none; border-bottom:1px solid #E4E4E4; width:280px; margin:0 auto 15px auto; padding-bottom:15px; }
+#DestaquesCapa li p { font-size:12px; font-weight:400; margin-bottom:5px; }
+#DestaquesCapa li h4 { font-size:14px; font-weight:300; line-height:18px; }
+#VerTodosDestaques { width:280px; margin:0 auto 15px auto; }
+#VerTodosDestaques a { font-size:14px; font-weight:400; color:#398546; }
+
+/* Midiakit */
+#TabMidiakit { margin:20px 0 }
+.collapsible,
+.page_collapsible,
+.accordion { margin: 0; padding:15px; border-bottom:1px solid #DBDBDB; background:url(../imagens/bg-tabs.jpg) repeat-x top left; text-transform:uppercase; color: #000; font-size:16px; font-weight:300; }
+div.container { padding:0; margin:0; }
+div.content { background:#FFF; margin: 0; line-height:18px; font-size:14px; font-weight:300; }
+
+/* Busca */
+#FiltroPesquisa { background:url(../imagens/bg-filtro.gif) no-repeat top left; width:620px; height:30px; clear:both; padding-bottom:10px; }
+#FiltroPesquisa p { padding:5px 10px; width:100px; float:left; position:relative; top:-10px; }
+#FiltroPesquisa form { position:relative; top:4px; left:20px; }
+#ResultadoBusca { margin:10px 0; }
+#ResultadoBusca li { list-style:none; border-bottom:1px solid #E4E4E4; padding-bottom:20px; margin-bottom:20px; }
+#ResultadoBusca h3 { font-size:16px; font-weight:400; margin:3px 0; }
+#ResultadoBusca h3 a { color:#333; }
+#ResultadoBusca .date,
+#ResultadoBusca .url { font-size:12px; }
+#ResultadoBusca .url a { color:#CCC; }
+.paginacaoBusca li { list-style:none; display:inline; font-size:35px; margin-right:20px; }
+
+/* SVM e VC */
+.cxContatoVeiculos { width:300px; height:340px; border-bottom:5px solid #E4E4E4; float:left; margin:10px 10px 20px 0; }
+
+
+/* ESPECIAIS */
+#EspeciaisPVM { width:940px; height:175px; margin:0 auto; clear:both; position:relative; top:20px; }
+#MancheteEspeciais { width:370px; position:absolute; top:10px; left:120px; }
+#MancheteEspeciais h2 { font-size:24px; font-weight:300; }
+#MancheteEspeciais p { line-height:22px; margin-top:5px; height:80px; overflow:hidden; }
+#MancheteEspeciais a,
+#ChamadasEspeciais a { color:#FFF; }
+#ChamadasEspeciais { width:370px; position:absolute; top:0; right:20px; }
+#ChamadasEspeciais div { height:70px; overflow:hidden; margin:10px 0; }
+#ChamadasEspeciais div img { float:left; margin-right:10px; }
+#ChamadasEspeciais div p { font-size:12px; color:#FFF; margin-bottom:5px; }
+#ChamadasEspeciais div h3 { font-size:16px; font-weight:300; }
